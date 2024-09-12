@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism: Explore Beyond the Stars</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Space Tourism: Explore Beyond the Stars</h1>
+        <p>
+            The future of tourism is in space. Discover the wonders of our universe and experience space like never before. 
+            Whether you want to travel to the Moon, Mars, or beyond, space tourism is becoming more accessible. Get ready for an interstellar journey!
+        </p>
+    </header>
+
+    <section class="video-section">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/ztVV54sPOns?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&showinfo=0&disablekb=1&playlist=ztVV54sPOns" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+
+        </div>
+        <p>Imagine flying above Earth, experiencing zero gravity, and viewing our home planet from outer space. Space tourism is no longer just a dream. It’s happening!</p>
+    </section>
+    
+    <!-- IMAGE SECTION -->
+    <section>
+        <h2>The Beauty of Space Travel</h2>
+        <img src="https://assets.editorial.aetnd.com/uploads/2020/04/earth-from-space-nasa.jpg" alt="Earth from Space">
+        <p>Behold the Earth from space! This view is waiting for you. Space tourism companies are developing spacecraft that will make this possible.</p>
+        
+        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/mpx/2704722219/2021_10/MarsAFP_9PG3DY-n3pk3j.jpg" alt="Mars Surface">
+        <p>Your next destination: Mars. As humans venture further into the cosmos, Mars could soon be a hotspot for tourism.</p>
+    </section>
+
+    <!-- INTERACTIVE CALCULATOR SECTION -->
+    <section class="calculator-section">
+        <!-- Gravity Calculator -->
+        <div class="calc-box">
+            <h3>Gravity Calculator</h3>
+            <p>Find out how much you'd weigh on different planets!</p>
+            <input type="number" id="weightOnEarth" placeholder="Enter your weight (kg)">
+            <button onclick="calculateGravity()">Calculate</button>
+            <p id="gravityResult">Your weight on other planets will appear here.</p>
+        </div>
+
+        <!-- Distance Calculator -->
+        <div class="calc-box">
+            <h3>Distance to Space Destinations</h3>
+            <p>Calculate the distance to various space destinations!</p>
+            <select id="destination">
+                <option value="384400">Moon</option>
+                <option value="54600000">Mars</option>
+                <option value="778500000">Jupiter</option>
+            </select>
+            <button onclick="calculateDistance()">Get Distance</button>
+            <p id="distanceResult">Distance will appear here.</p>
+        </div>
+
+        <!-- Travel Time Estimator -->
+        <div class="calc-box">
+            <h3>Travel Time Estimator</h3>
+            <p>Estimate how long it will take to reach your destination at various speeds.</p>
+            <input type="number" id="speed" placeholder="Enter speed (km/h)">
+            <button onclick="calculateTravelTime()">Estimate Travel Time</button>
+            <p id="travelTimeResult">Travel time will appear here.</p>
+        </div>
+    </section>
+
+    <!-- SPACE FUTURE SECTION -->
+    <section>
+        <h2>The Future of Space Tourism</h2>
+        <p>Companies like SpaceX, Blue Origin, and Virgin Galactic are pioneering space tourism. 
+        With more companies joining, soon we'll see trips to the Moon, Mars, and beyond becoming reality. 
+        These missions will offer the ultimate adventure for travelers, from suborbital spaceflights to full-scale interplanetary exploration.</p>
+        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/journey_to_mars.jpeg" alt="Journey to Mars">
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 Space Tourism Co. All rights reserved.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="scripts1.js"></script>
+</body>
+</html>

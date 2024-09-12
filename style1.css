@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: #1a1a1a;
+}
+
+h1, h2, h3 {
+    color: #ffcc00;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+img, video {
+    display: block; /* Makes sure the element is treated as a block-level element */
+    margin: 0 auto; /* Center the element horizontally */
+    max-width: 60%; /* Adjusts the size to fit within the container */
+    border-radius: 10px; /* Rounds the corners */
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Container for the iframe */
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    padding-top: 50.6%; /* 16:9 Aspect Ratio */
+    height: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Styling for the iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+/* Calculator Section */
+.calculator-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.calc-box {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+input, select, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins is applied here */
+}
+
+button {
+    background-color: #ffcc00;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffdd44;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 30px;
+}

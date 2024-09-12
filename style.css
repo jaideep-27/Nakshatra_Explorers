@@ -1,0 +1,291 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Basic styling for the body */
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  font-size: large;
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Section styling */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+#home {
+  background: url('https://science.nasa.gov/wp-content/uploads/2023/09/m31-layered-uv-and-optical.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Text shadow to make the text pop */
+}
+
+#home a{
+  text-decoration: none;
+}
+
+#home h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 0.6px black;
+}
+
+#home p {
+  font-size: 20px;
+  margin-top: 10px;
+  text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7); /* Lighter shadow for paragraph text */
+}
+#missions, #tourism, #articles, #space-news {
+  background-color: #222;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Articles grid layout - 3 articles per row */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .articles-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .articles-grid {
+      grid-template-columns: 1fr; /* 1 column for phones */
+  }
+}
+
+.article-box {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.article-box:hover {
+  transform: scale(1.05);
+}
+
+.article-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Removing the underline from the links */
+.article-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-box h3 {
+  font-size: 22px;
+  color: #f39c12;
+}
+
+.article-box p {
+  font-size: 16px;
+}
+
+/* Orange highlight tag repositioned to top-right */
+.highlight {
+  background-color: #f39c12;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+}
+
+/* Space News Section */
+#space-news ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#space-news ul li {
+  margin: 10px 0;
+}
+
+#space-news ul li a {
+  color: #f39c12;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+#space-news ul li a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.missions-grid, .articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.mission-box, .article-box {
+  background-color: #333; /* Darker grey for the background */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px; /* Added padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-box a, .article-box a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.mission-box img, .article-box img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #444;
+}
+
+.mission-box h3, .article-box h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.mission-box p, .article-box p {
+  font-size: 1rem;
+}
+
+.mission-box:hover, .article-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f39c12;
+  color: #000;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-box, .mission-box {
+      padding: 10px;
+  }
+
+  .article-box h3, .mission-box h3 {
+      font-size: 1.25rem;
+  }
+
+  .article-box p, .mission-box p {
+      font-size: 0.875rem;
+  }
+}
